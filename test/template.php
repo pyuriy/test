@@ -1,33 +1,3 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<div class="news_detail">
-
-		<?if(count($arResult["ITEMS_THEME"]) > 0 ):?>
-   		 <div class='readalse_newsdetail'>
-		 		<span><?=GetMessage('READ_ALSO_TITLE')?>:</span>
-
-			<?foreach($arResult["ITEMS_THEME"] as $pid=>$arProperty):?>
-				<p><?=$arProperty?></p>
-			<?endforeach;?>
-   		</div>
-		<?endif?>
-	
-
-<script>
-$(document).ready(function() {
-	$("#caruselreadaslo").carouFredSel({
-	    items: 3,
-	    circular: true,
-	    auto : 6000,
-     	scroll : {
-	        pauseOnHover : true,
-	        fx : 'fade',
-	        pauseDuration : 6000,
-	        duration : 300
-				 },
-	    prev : {
-	        button  : "#caruselreadaslo_prev",
-	        key     : "left"
-	    },
 	    next : {
 	        button  : "#caruselreadaslo_next",
 	        key     : "right"
